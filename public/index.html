@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWA Modern Features</title>
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>PWA Modern Features</h1>
+
+    <div class="grid">
+
+        <div class="card">
+            <h2>File System</h2>
+            <button onclick="openFileSystem()">
+                Abrir archivos
+            </button>
+        </div>
+
+        <div class="card">
+            <h2>Authentication</h2>
+            <button onclick="registerBiometric()">
+                WebAuthn
+            </button>
+        </div>
+
+        <div class="card">
+            <h2>Face Detection</h2>
+            <button onclick="detectFace()">
+                Detectar rostro
+            </button>
+        </div>
+
+        <div class="card">
+            <h2>Barcode Detection</h2>
+            <button onclick="scanBarcode()">
+                Escanear código
+            </button>
+        </div>
+
+        <div class="card">
+            <h2>Screen Capture</h2>
+            <button onclick="captureScreen()">
+                Compartir pantalla
+            </button>
+        </div>
+
+        <div class="card">
+            <h2>Audio Recording</h2>
+            <button onclick="startRecording()">
+                Grabar audio
+            </button>
+        </div>
+
+        <div class="card">
+            <h2>Orientation</h2>
+            <button onclick="startOrientation()">
+                Detectar orientación
+            </button>
+        </div>
+
+        <div class="card">
+            <h2>Motion</h2>
+            <button onclick="startMotion()">
+                Detectar movimiento
+            </button>
+        </div>
+
+        <div class="card">
+            <h2>Multitouch</h2>
+            <button onclick="enableMultitouch()">
+                Activar multitouch
+            </button>
+        </div>
+
+        <div class="card">
+            <h2>View Transition</h2>
+            <button onclick="changeView()">
+                Transición
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/filesystem.js"></script>
+<script src="js/authentication.js"></script>
+<script src="js/facedetection.js"></script>
+<script src="js/barcode.js"></script>
+<script src="js/screencapture.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/orientation.js"></script>
+<script src="js/motion.js"></script>
+<script src="js/multitouch.js"></script>
+<script src="js/viewtransition.js"></script>
+
+</body>
+</html>

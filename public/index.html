@@ -1,105 +1,244 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PWA Modern Features</title>
 
-    <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="css/styles.css">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>PWA Recursos Nativos 2</title>
+
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json">
+
+    <meta name="theme-color" content="#ED7016">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Fonts -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="/css/styles.css">
+
 </head>
+
 <body>
 
-<div class="container">
+    <h1>PWA Recursos Nativos 2</h1>
 
-    <h1>PWA Modern Features</h1>
+    <button id="installBtn"
+            onclick="installApp()">
+
+        Instalar PWA
+
+    </button>
 
     <div class="grid">
 
         <div class="card">
+
             <h2>File System</h2>
+
             <button onclick="openFileSystem()">
-                Abrir archivos
+                Abrir archivo
             </button>
+
+            <div class="output"
+                 id="filesystemOutput">
+
+                Esperando archivo...
+
+            </div>
+
         </div>
 
         <div class="card">
+
             <h2>Authentication</h2>
+
             <button onclick="registerBiometric()">
                 WebAuthn
             </button>
+
+            <div class="output"
+                 id="authOutput">
+
+                Esperando autenticación...
+
+            </div>
+
         </div>
 
         <div class="card">
+
             <h2>Face Detection</h2>
+
             <button onclick="detectFace()">
                 Detectar rostro
             </button>
+
+            <div class="output"
+                 id="faceOutput">
+
+                Esperando detección...
+
+            </div>
+
         </div>
 
         <div class="card">
+
             <h2>Barcode Detection</h2>
+
             <button onclick="scanBarcode()">
                 Escanear código
             </button>
+
+            <div class="output"
+                 id="barcodeOutput">
+
+                Esperando código...
+
+            </div>
+
         </div>
 
         <div class="card">
+
             <h2>Screen Capture</h2>
+
             <button onclick="captureScreen()">
                 Compartir pantalla
             </button>
+
+            <div class="output"
+                 id="screenOutput">
+
+                Esperando captura...
+
+            </div>
+
         </div>
 
         <div class="card">
+
             <h2>Audio Recording</h2>
+
             <button onclick="startRecording()">
                 Grabar audio
             </button>
+
+            <div class="output"
+                 id="audioOutput">
+
+                Esperando grabación...
+
+            </div>
+
         </div>
 
         <div class="card">
+
             <h2>Orientation</h2>
+
             <button onclick="startOrientation()">
-                Detectar orientación
+                Activar orientación
             </button>
+
+            <div class="output"
+                 id="orientationData">
+
+                Esperando orientación...
+
+            </div>
+
         </div>
 
         <div class="card">
+
             <h2>Motion</h2>
+
             <button onclick="startMotion()">
-                Detectar movimiento
+                Activar movimiento
             </button>
+
+            <div class="output"
+                 id="motionData">
+
+                Esperando movimiento...
+
+            </div>
+
         </div>
 
         <div class="card">
+
             <h2>Multitouch</h2>
+
             <button onclick="enableMultitouch()">
                 Activar multitouch
             </button>
+
+            <div id="touchArea">
+
+                Usa varios dedos aquí
+
+            </div>
+
+            <div class="output"
+                 id="touchData">
+
+                Esperando multitouch...
+
+            </div>
+
         </div>
 
         <div class="card">
+
             <h2>View Transition</h2>
+
             <button onclick="changeView()">
-                Transición
+                Cambiar tema
             </button>
+
+            <div class="output"
+                 id="transitionOutput">
+
+                Esperando transición...
+
+            </div>
+
         </div>
 
     </div>
 
-</div>
-
-<script src="js/filesystem.js"></script>
-<script src="js/authentication.js"></script>
-<script src="js/facedetection.js"></script>
-<script src="js/barcode.js"></script>
-<script src="js/screencapture.js"></script>
-<script src="js/audio.js"></script>
-<script src="js/orientation.js"></script>
-<script src="js/motion.js"></script>
-<script src="js/multitouch.js"></script>
-<script src="js/viewtransition.js"></script>
+    <!-- JS -->
+    <script src="/js/app.js"></script>
+    <script src="/js/install.js"></script>
+    <script src="/js/filesystem.js"></script>
+    <script src="/js/authentication.js"></script>
+    <script src="/js/facedetection.js"></script>
+    <script src="/js/barcode.js"></script>
+    <script src="/js/screencapture.js"></script>
+    <script src="/js/audio.js"></script>
+    <script src="/js/orientation.js"></script>
+    <script src="/js/motion.js"></script>
+    <script src="/js/multitouch.js"></script>
+    <script src="/js/viewtransition.js"></script>
 
 </body>
+
 </html>

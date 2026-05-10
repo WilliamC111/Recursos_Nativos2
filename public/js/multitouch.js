@@ -1,13 +1,22 @@
-function enableMultitouch(){
+function enableMultitouch() {
 
-    document.body.addEventListener(
+    const area =
+        document.getElementById('touchArea');
+
+    const output =
+        document.getElementById('touchData');
+
+    area.addEventListener(
         'touchmove',
-        (e)=>{
+        (event) => {
 
-            console.log(
-                e.touches.length
-            );
+            event.preventDefault();
 
-        }
+            output.innerHTML =
+                `Dedos detectados: ${event.touches.length}`;
+
+        },
+        { passive: false }
     );
+
 }

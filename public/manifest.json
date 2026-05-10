@@ -1,15 +1,21 @@
 {
-    "name":"PWA Modern Features",
-    "short_name":"PWADemo",
-    "start_url":"/",
-    "display":"standalone",
-    "background_color":"#117CED",
-    "theme_color":"#ED7016",
-    "icons":[
-        {
-            "src":"icons/icon-192.png",
-            "sizes":"192x192",
-            "type":"image/png"
-        }
-    ]
+  "name": "PWA Modern Features",
+  "short_name": "PWADemo",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#117CED",
+  "theme_color": "#ED7016",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }

@@ -1,8 +1,19 @@
-if('serviceWorker' in navigator){
+if ('serviceWorker' in navigator) {
 
-    navigator.serviceWorker.register('/sw.js')
-    .then(()=>{
-        console.log('SW registrado');
+    window.addEventListener('load', async () => {
+
+        try {
+
+            await navigator.serviceWorker.register('/sw.js');
+
+            console.log('Service Worker registrado');
+
+        } catch (error) {
+
+            console.error(error);
+
+        }
+
     });
 
 }
